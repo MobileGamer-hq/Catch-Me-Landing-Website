@@ -1,0 +1,35 @@
+.audience {
+    text-align: center;
+    background-color: var(--card);
+}
+
+.audience h1 {
+    margin-bottom: 1rem;
+}
+
+.audience p {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    color: var(--subtext);
+}
+
+.audience-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.audience-card {
+    background: var(--background);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.audience-card h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--tint);
+}

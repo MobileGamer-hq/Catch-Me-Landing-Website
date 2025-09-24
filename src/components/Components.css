@@ -1,9 +1,9 @@
 /* Components.css */
 .get-started-button {
-    background-color: #5654CB;
+    background-color: var(--tint);
     color: #fff;
-    padding: 12px 20px;
-    border-radius: 10px;
+    padding: 12px 30px;
+    border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
@@ -14,7 +14,8 @@
 
 .get-started-button:hover {
     cursor: pointer;
-    background-color: var(--tint-light);
+    background-color: var(--tint-dark);
+    color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }

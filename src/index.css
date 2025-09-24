@@ -24,6 +24,8 @@
 
   /* Dark mode set */
   --text: #ECEDEE;
+  --subtext: #9BA1A6;
+  --text-grey: #555;
   --background: #14151A;
   --transparent-bg: rgba(20, 21, 26, 0.5);
   --card: #1C1E25;
@@ -79,6 +81,17 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+/*!* Allow scrolling but hide scrollbars *!*/
+/*body {*/
+/*  scrollbar-width: none; !* Firefox *!*/
+/*  -ms-overflow-style: none; !* IE and Edge *!*/
+/*}*/
+
+/*body::-webkit-scrollbar {*/
+/*  display: none; !* Chrome, Safari, Opera *!*/
+/*}*/
+
 
 @media (prefers-color-scheme: light) {
   :root {

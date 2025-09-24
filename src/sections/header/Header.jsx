@@ -25,6 +25,7 @@ function Header() {
                 <a href="#audience" onClick={() => setMenuOpen(false)}>Audience</a>
                 <a href="#product" onClick={() => setMenuOpen(false)}>Product</a>
                 <a href="#footer" onClick={() => setMenuOpen(false)}>Contact</a>
+                <a href={links.app} onClick={() => setMenuOpen(false)}>Web App</a>
             </nav>
         </header>
     );

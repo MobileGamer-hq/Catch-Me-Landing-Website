@@ -28,7 +28,7 @@
 }
 
 .nav a:hover {
-    color: #9854CB; /* tint color */
+    color: var(--tint-light); /* tint color */
 }
 
 /* --- MOBILE --- */
