@@ -10,9 +10,7 @@ function Hero() {
             <div className="hero-body">
                 <h1>Where Talent Meets Opportunity</h1>
                 <p>
-                    Catch Me is the all-in-one platform for athletes to showcase their skills,
-                    track performance, and get noticed by scouts, coaches, and fans.
-                    Every game counts and we make sure it’s seen.
+                    A platform for athletes to showcase their skills, track performance, and get noticed by scouts, coaches, and fans. Every game counts and we make sure it’s seen.
                 </p>
 
                 <div className="hero-buttons">
