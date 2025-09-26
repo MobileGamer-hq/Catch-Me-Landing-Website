@@ -10,10 +10,16 @@ section {
 
 h1 {
   font-size: 3rem;
+  background: linear-gradient(90deg, var(--tint-light), #FFF);
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the rest of the text transparent */
 }
 
 h2 {
 font-size: 2rem;
+  background: linear-gradient(90deg,  var(--tint-light), var(--tint));
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the rest of the text transparent */
 }
 
 .phone-img {

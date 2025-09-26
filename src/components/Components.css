@@ -3,19 +3,24 @@
     background-color: var(--tint);
     color: #fff;
     padding: 12px 30px;
+    width: 150px;
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, var(--tint-light), var(--tint));
 }
 
 .get-started-button:hover {
     cursor: pointer;
-    background-color: var(--tint-dark);
+    /*background-color: var(--tint-dark);*/
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(90deg, var(--tint-dark), var(--tint));
 }

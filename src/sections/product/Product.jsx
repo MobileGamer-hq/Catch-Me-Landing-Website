@@ -1,6 +1,7 @@
 import React from 'react';
 import {images} from "../../assets/assets.js";
 import './Product.css';
+import GetStartedButton from "../../components/GetStartedButton.jsx";
 
 function Product() {
     return (
@@ -19,6 +20,7 @@ function Product() {
                 {/*    <li>Connect athletes, coaches, scouts, and fans in one place</li>*/}
                 {/*    <li>Turn every moment into an opportunity to be seen</li>*/}
                 {/*</ul>*/}
+                <GetStartedButton text={'Try Web App'}/>
             </div>
             <div className="product-container">
                 <img className="product-img" src={images.main} alt="Catch Me app showcase" />

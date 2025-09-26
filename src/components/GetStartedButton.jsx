@@ -3,10 +3,10 @@ import React from 'react';
 import './Components.css';
 import {links} from "../assets/assets.js";
 
-function GetStartedButton() {
+function GetStartedButton({text = 'Get Started'}) {
     return (
         <a className="get-started-button" href={links.app} target="_blank" rel="noopener noreferrer">
-            Get Started
+            {text}
         </a>
     );
 }

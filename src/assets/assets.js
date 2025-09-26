@@ -29,31 +29,31 @@ export const images = {
 }
 
 export const links = {
-    app : 'http://catchme.live',
+    app : 'http://app.catchme.live',
 }
 
-const colors = {
-    // Primary tints
-    tint: '',
-    tintDark: '#3741A0',   // ARGB(255, 55, 65, 160)
-    tintLight: '#9190EB',  // ARGB(255, 145, 144, 235)
-
-    // Gradients
-    gradientStart: '#9854CB',
-    gradientStop: '#EA3323',
-
-    // Dark mode set
-    text: '#ECEDEE',
-    background: '#14151A',
-    transparent_bg: 'rgba(20, 21, 26, 0.5)',
-    card: '#1C1E25',          // ARGB(255, 28, 30, 37)
-    cardSelected: '#20222A',  // ARGB(255, 32, 34, 42)
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: '#3741A0',
-    grey: '#414246',
-
-    // Error colors (dark)
-    error: '#EA3323',
-    errorBackground: 'rgba(144, 40, 40, 0.74)', // ARGB(189, 144, 40, 40)
-};
+// const colors = {
+//     // Primary tints
+//     tint: '',
+//     tintDark: '#3741A0',   // ARGB(255, 55, 65, 160)
+//     tintLight: '#9190EB',  // ARGB(255, 145, 144, 235)
+//
+//     // Gradients
+//     gradientStart: '#9854CB',
+//     gradientStop: '#EA3323',
+//
+//     // Dark mode set
+//     text: '#ECEDEE',
+//     background: '#14151A',
+//     transparent_bg: 'rgba(20, 21, 26, 0.5)',
+//     card: '#1C1E25',          // ARGB(255, 28, 30, 37)
+//     cardSelected: '#20222A',  // ARGB(255, 32, 34, 42)
+//     icon: '#9BA1A6',
+//     tabIconDefault: '#9BA1A6',
+//     tabIconSelected: '#3741A0',
+//     grey: '#414246',
+//
+//     // Error colors (dark)
+//     error: '#EA3323',
+//     errorBackground: 'rgba(144, 40, 40, 0.74)', // ARGB(189, 144, 40, 40)
+// };

@@ -1,13 +1,21 @@
-.header {
+.header{
     position: sticky;
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+
     padding: 1rem 2rem;
     background: #14151A;
-    border-bottom: 1px solid #333;
+    /*border-bottom: 1px solid #333;*/
+}
+
+.header-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: #14151A;
 }
 
 #logo {
@@ -15,51 +23,90 @@
     cursor: pointer;
 }
 
-.nav {
+/* Grouping */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+}
+
+.header-right {
+    margin-left: auto;
+}
+
+/* Desktop Nav */
+.desktop-nav {
     display: flex;
     gap: 1.5rem;
 }
 
-.nav a {
+.desktop-nav a {
     text-decoration: none;
     color: #ECEDEE;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.nav a:hover {
-    color: var(--tint-light); /* tint color */
+.desktop-nav a:hover {
+    color: var(--tint-light);
 }
 
-/* --- MOBILE --- */
+/* Toggle hidden by default */
 .menu-toggle {
     display: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #ECEDEE;
     background: none;
     border: none;
     cursor: pointer;
 }
 
-/* Small screens */
+/* Mobile nav hidden by default */
+.mobile-nav {
+    display: none;
+}
+
+/* --- MOBILE --- */
 @media (max-width: 768px) {
-    .nav {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #14151A;
-        flex-direction: column;
-        width: 200px;
-        padding: 1rem;
-        border-left: 1px solid #333;
-        display: none; /* hidden by default */
+    /* Hide desktop items */
+    .desktop-nav,
+    .desktop-only {
+        display: none;
     }
 
-    .nav.open {
-        display: flex; /* show when toggled */
-    }
-
-    .menu-toggle {
+    /* Show hamburger */
+    .menu-toggle.mobile-only {
         display: block;
+    }
+
+    /* Mobile nav menu */
+    .mobile-nav {
+        background: #14151A;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+        display: none;
+
+    }
+
+    .mobile-nav.open {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .mobile-nav a {
+        color: #ECEDEE;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 0;
+    }
+
+    .mobile-nav a:hover {
+        color: var(--tint-light);
     }
 }
